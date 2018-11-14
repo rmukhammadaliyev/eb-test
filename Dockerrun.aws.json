@@ -1,0 +1,19 @@
+{
+  "AWSEBDockerrunVersion": "1",
+  "Image": {
+    "Name": "",
+    "Update": "true"
+  },
+  "Ports": [
+    {
+      "ContainerPort": "80"
+    }
+  ],
+  "Volumes": [
+    {
+      "HostDirectory": "/efs/test",
+      "ContainerDirectory": "/var/www/html/test"
+    }
+  ],
+  "Logging": "/var/log/httpd"
+}
